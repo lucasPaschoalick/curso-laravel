@@ -11,9 +11,6 @@
         <script src="/js/scripts.js"></script>
         
     </head>
-    
     <body>
-        <h1>Título</h1>
-        <img src="/img/banner.jpg" alt="Banner">
+        <h1>Tela de produtos</h1>
     </body>
-</html>

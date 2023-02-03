@@ -11,9 +11,7 @@
         <script src="/js/scripts.js"></script>
         
     </head>
-    
     <body>
-        <h1>Título</h1>
-        <img src="/img/banner.jpg" alt="Banner">
+        <h1>Pagina de contato</h1>
+        <a href="/">Voltar home</a>
     </body>
-</html>
