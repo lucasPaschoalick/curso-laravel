@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.main')
 
-        <title>Laravel</title>
+@section('title', 'HDC Events')
 
-        <link rel="stylesheet" href="/css/styles.css">
+@section('content')
 
-        <script src="/js/scripts.js"></script>
-        
-    </head>
-    
-    <body>
-        <h1>Título</h1>
-        <img src="/img/banner.jpg" alt="Banner">
-    </body>
-</html>
+<h1>Título</h1>
+<img src="/img/banner.jpg" alt="Banner">
+
+@endsection
