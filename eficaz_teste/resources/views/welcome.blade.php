@@ -4,7 +4,8 @@
 
 @section('content')
 
-<h1>Título</h1>
-<img src="/img/banner.jpg" alt="Banner">
+    <h1>Título</h1>
+    
+    <img src="/img/banner.jpg" alt="Banner">
 
 @endsection

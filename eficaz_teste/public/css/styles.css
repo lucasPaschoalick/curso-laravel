@@ -1,4 +1,8 @@
 * {
-  font-family: 'Roboto';
-  color: red;
+  font-family: 'Roboto';  
+}
+
+/* id */
+#navbar img{
+  width: 50px;
 }
