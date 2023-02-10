@@ -10,7 +10,8 @@ use App\Models\User;
 
 class EventController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         
         $search = request('search');
 
@@ -27,13 +28,15 @@ class EventController extends Controller
 
     }
 
-    public function create(){
+    public function create()
+    {
         
         return view('events.create');
 
     }
 
-    public function store(Request $request){
+    public function store(Request $request)
+    {
        
         $event = new Event;
 
@@ -70,7 +73,8 @@ class EventController extends Controller
     
     }
 
-    public function show($id){
+    public function show($id)
+    {
 
         $event = Event::findOrFail($id);
 
@@ -78,5 +82,25 @@ class EventController extends Controller
 
         return view('events.show', ['event' => $event, 'eventOwner' => $eventOwner]);
 
+    }
+    
+    public function dashboard()
+    {
+
+        $user = auth()->user();
+
+        $events = $user->events;
+
+        return view('events.dashboard', ['events' => $events]);
+
+    }
+
+    public function destroy($id)
+    {
+
+        Event::findOrFail($id)->delete();
+
+        return redirect('/dashboard')->with('msg', 'Evento excluído com sucesso!!');
+   
     }
 }

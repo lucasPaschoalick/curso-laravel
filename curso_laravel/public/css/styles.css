@@ -32,7 +32,7 @@ header {
   border-color: #C28008;
 }
 
-.msg{
+.msg {
   background-color: #D4EDDA;
   color: #155724;
   border: 1px solid #C3E6CB;
@@ -193,8 +193,22 @@ header {
   display: flex;
 }
 
-#description-container{
+#description-container {
   margin-top: 30px;
+}
+
+/* Dashboard */
+.dashboard-title-container {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.dashboard-events-container th {
+  width: 25%;
+}
+
+.dashboard-events-container form {
+  display: inline-block;
 }
 
 /* footer */
