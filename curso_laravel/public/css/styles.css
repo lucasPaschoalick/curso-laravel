@@ -4,14 +4,16 @@
 }
 
 body {
+  background-color: rgb(244, 240, 235);
   min-height: 100vh;
   padding-bottom: 100px;
   position: relative;
 }
 
 header {
-  background-color: #FFF;
-  border-bottom: 1px solid #CCC;
+  background-color: #323232;  
+  /* background-color: rgb(244, 240, 235); */
+  border-bottom: 3px solid rgb(70, 143, 203);
 }
 
 .row {
@@ -23,13 +25,15 @@ header {
 }
 
 .btn-primary {
-  background-color: #F2A340;
-  border: 2px solid #C28008;
+  background: transparent;
+  color: rgb(70, 143, 203);
+  border: 1px solid rgb(70, 143, 203);
 }
 
-.btn-primary:hover {
-  background-color: #C28008;
-  border-color: #C28008;
+.btn-primary:hover {  
+  color: #fff;
+  background-color: rgb(70, 143, 203);
+  border: 2px solid rgb(70, 143, 203);
 }
 
 .msg {
@@ -58,7 +62,8 @@ header {
 
 #navbar {
   justify-content: space-between;
-  background-color: #FFF;
+  background-color: #323232;
+  color: #939393;
   padding: 5px 0;
 }
 
@@ -68,7 +73,7 @@ header {
 }
 
 #navbar a:hover {
-  color: #F2A340;
+  color: rgb(70, 143, 203);
 }
 
 /* Search Container */
@@ -82,7 +87,7 @@ header {
 }
 
 #search-container h1 {
-  color: #F2A340;
+  color: rgb(70, 143, 203);
   margin-bottom: 30px;
   font-weight: 900;
 }
@@ -185,7 +190,7 @@ header {
 
 #info-container ion-icon {
   font-size: 20px;
-  color: #F2A340;
+  color: rgb(70, 143, 203);
   margin-right: 5px;
 }
 
@@ -229,8 +234,9 @@ header {
 /* footer */
 footer {
   text-align: center;
-  background-color: #353E48;
-  color: #FFF;
+  background-color: #323232;
+  color: #939393;
+  border-top: 4px solid rgb(70, 143, 203);
   padding: 30px;
   position: absolute;
   bottom: 0;
@@ -239,4 +245,11 @@ footer {
 
 footer p {
   margin-bottom: 0;
+}
+
+/* API de busca */
+
+.btn-show-all {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

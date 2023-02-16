@@ -30,9 +30,9 @@ Route::put('/events/update/{id}', [EventController::class, 'update'])->middlewar
 Route::delete('/events/{id}', [EventController::class, 'destroy'])->middleware('auth');
 Route::delete('/events/leave/{id}', [EventController::class, 'leaveEvent'])->middleware('auth');
 
-// contact
-Route::get('/contact', function () {
-    return view('contact');
+// eventos
+Route::get('/eventos', function () {
+    return view('/eventos_api/eventos', ['events' => null, 'search' => null]);
 });
 
 // dashboard

@@ -8,7 +8,11 @@
         <form action="/" method="GET">
             <input type="text" id="search" name="search" class="form-control" placeholder="Procurar...">
         </form>
-    </div>    
+    </div>
+    <div class="col-md-12" style="margin-top: 20px;">
+        <h1>API para mostrar os eventos</h1>
+        <a href="/eventos" class="btn btn-primary">Acessar API</a>
+    </div>
     <div id="events-container" class="col-md-12">
         @if($search)
             <h2>Resultado da busca: {{ $search }}</h2>
