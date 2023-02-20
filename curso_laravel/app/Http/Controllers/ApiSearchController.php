@@ -40,9 +40,15 @@ class ApiSearchController extends Controller
             
             return view('eventos_api.eventos', ['events' => $events, 'search' => $search]);
         */
+        
+        $events = Event::all();                
+        echo '<pre>';
+        print_r(json_decode($events,true));         
+        echo '<pre>';
 
         // retorno do json com todos os eventos
-        return response()->json(Event::all());
+        // return response()->json($events);
+        return response()->json($events);;
         
     }
 
